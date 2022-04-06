@@ -33,7 +33,7 @@ nav>div>p>a{
     color: white;
     font-weight: bolder;
     text-decoration: none;
-    transition: all 0.2s;
+    transition: all 0.3s;
 }
 
 nav>div>p>a:hover{
