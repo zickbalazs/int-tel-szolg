@@ -3,6 +3,11 @@ body{
     margin: 0;
     padding: 0;
     color: #836339;
+    background-color: rgb(255, 255, 251);
+}
+main{
+    width: 90%;
+    margin:auto;
 }
 nav{
     width: 100%;
@@ -36,7 +41,7 @@ nav>div>p>a{
     color: white;
     font-weight: bolder;
     text-decoration: none;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 
 nav>div>p>a:hover{
@@ -50,26 +55,45 @@ nav>div>p>a:hover{
 .flex{
     display:flex;
     flex-flow:row wrap;
-    margin-top: 5%;
-    justify-content: space-evenly;
+    margin:auto;
+    margin-top: 1%;
+    justify-content: space-between;
+}
+#flexCim{
+    margin:auto;
 }
 .imageover{
     position: relative;
+    overflow: hidden;
 }
 .imageover>img{
     width: 100%;
+    filter:blur(2px);
+    transition: filter 0.2s;
 }
 .imageover>div{
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.425);
+    background-color: rgba(0, 0, 0, 0.4);
     position:absolute;
     top: 0%;
     display:flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.1s;
 }
 .imageover>div>a{
     color:white;
+    transition:font-size 0.2s;
+    transition-delay: 0.2s;
     text-decoration: none;
+}
+.imageover:hover img{
+    filter:blur(0px);
+}
+.imageover:hover div>a{
+    font-size: larger;
+}
+.imageover:hover div{
+    background-color: rgba(0, 0, 0, 0.75);
 }
