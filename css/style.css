@@ -1,4 +1,4 @@
-html, body{
+body{
     width: 100%;
     margin: 0;
     padding: 0;
@@ -9,10 +9,10 @@ nav{
     min-height: 50px;
     background-color: #8f0413;
     color:white;
-}
-nav>div{
     position: sticky;
     top: 0;
+}
+nav>div{
     display: flex;
     flex-flow: row wrap;
     justify-content:space-around;
@@ -23,11 +23,14 @@ button{
 }
 header{
     background-color: #1b5e38;
+    display:flex;
+    align-items: center;
 }
-header h1{
+header img{
     margin: 0;
     padding:50px;
-    text-align: center;
+    width: 25%;
+    margin:auto;
 }
 nav>div>p>a{
     color: white;
@@ -39,4 +42,34 @@ nav>div>p>a{
 nav>div>p>a:hover{
     color: #836339;
     text-shadow: darkgray 0 0 0.5px;
+}
+.imageover{
+    height:300px;
+    width: 300px;
+}
+.flex{
+    display:flex;
+    flex-flow:row wrap;
+    margin-top: 5%;
+    justify-content: space-evenly;
+}
+.imageover{
+    position: relative;
+}
+.imageover>img{
+    width: 100%;
+}
+.imageover>div{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.425);
+    position:absolute;
+    top: 0%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.imageover>div>a{
+    color:white;
+    text-decoration: none;
 }
