@@ -1,8 +1,13 @@
+@font-face{
+    font-family: "Lexend Deca";
+    src:url("font/Lexend_Deca/LexendDeca-VariableFont_wght.ttf")
+}
 body{
     width: 100%;
     margin: 0;
     padding: 0;
     color: #836339;
+    font-family: "Lexend Deca";
     background-color: rgb(255, 255, 251);
 }
 main{
@@ -14,8 +19,6 @@ nav{
     min-height: 50px;
     background-color: #8f0413;
     color:white;
-    position: sticky;
-    top: 0;
 }
 nav>div{
     display: flex;
@@ -25,6 +28,10 @@ nav>div{
 }
 button{
     display:none;
+    background-color: transparent;
+    border:none;
+    color:white;
+    font-size: 100%;
 }
 header{
     background-color: #1b5e38;
@@ -80,20 +87,63 @@ nav>div>p>a:hover{
     display:flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.1s;
+    transition: background-color 0.2s;
 }
 .imageover>div>a{
     color:white;
+    font-size: larger;
     transition:font-size 0.2s;
-    transition-delay: 0.2s;
+    transition-timing-function: ease-in-out;
     text-decoration: none;
 }
 .imageover:hover img{
     filter:blur(0px);
 }
 .imageover:hover div>a{
-    font-size: larger;
+    font-size: xx-large;
+
 }
 .imageover:hover div{
     background-color: rgba(0, 0, 0, 0.75);
+}
+#jelenlegi{
+    text-decoration: underline;
+    color:#836339;
+}
+@media screen and (max-width:679px){
+    header img{
+        width: 90%;
+        padding:10px;
+    }
+    nav>div{
+        height: 0;
+        flex-flow:column wrap;
+        display:none;
+    }
+    .flex{
+        flex-flow: column;
+    }
+    .imageover{
+        margin:auto;
+        margin-top: 5px;
+        width: 40% !important;
+        height: auto !important;
+    }
+    button{
+        display:block;
+        height: 50px;
+        width:50px;
+    }
+}
+@media screen and (max-width:762px){
+    header img{
+        width: 50%;
+    }
+    
+}
+@media screen and (max-width:1000px){
+    .imageover{
+        width: 200px;
+        height: 200px;
+    }
 }
