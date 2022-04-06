@@ -1,0 +1,71 @@
+html, body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+<<<<<<< ours
+=======
+    color: #836339;
+>>>>>>> theirs
+}
+nav{
+    width: 100%;
+    min-height: 50px;
+<<<<<<< ours
+    background-color: rgb(3, 9, 43);
+    color:white;
+    
+}
+header{
+    background-color: rgb(36, 36, 36);
+}
+header h1{
+    margin: 0;
+<<<<<<< ours
+<<<<<<< ours
+}
+
+=======
+    padding:50px;
+    text-align: center;
+}
+>>>>>>> theirs
+=======
+    padding:50px;
+    text-align: center;
+}
+>>>>>>> theirs
+=======
+    background-color: #8f0413;
+    color:white;
+}
+nav>div{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    
+}
+button{
+    display:none;
+}
+header{
+    background-color: #1b5e38;
+}
+header h1{
+    margin: 0;
+    padding:50px;
+    text-align: center;
+}
+nav>div>p>a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+nav>div>p>a:hover{
+    color: #836339;
+    text-shadow: darkgray 0 0 0.5px;
+}
+>>>>>>> theirs
