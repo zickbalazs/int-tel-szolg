@@ -2,6 +2,10 @@
     font-family: "Lexend Deca";
     src:url("font/Lexend_Deca/LexendDeca-VariableFont_wght.ttf")
 }
+html{
+
+    scrollbar-width: thin;
+}
 body{
     width: 100%;
     margin: 0;
