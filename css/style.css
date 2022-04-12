@@ -173,3 +173,18 @@ nav>div>p>a:hover{
         height: 200px;
     }
 }
+.container_flex_tv_internet{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 80%;
+}
+.container_flex_tv_internet>div{
+    width: 25%;
+    margin-top: 50px;
+    min-width: 300px;
+    background-color: #8f0413;
+    padding: 10px;
+    border-radius: 15px;
+    color:black;
+}
