@@ -47,6 +47,14 @@ footer{
 }
 footer>*{
     margin: 0;
+
+}
+footer>ul>li>a{
+    color: #836339;
+    transition: color 0.2s;
+}
+footer>ul>li>a:hover{
+    color: white;
 }
 header{
     background-color: #1b5e38;
