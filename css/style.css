@@ -208,13 +208,25 @@ span{
     flex-flow: row wrap;
     justify-content: space-evenly;
     width: 80%;
+    margin:auto;
+}
+.qanda{
+    margin-bottom: 300px;
+}
+.container_flex_tv_internet>div>h3, .container_flex_tv_internet>div>p{
+    border-bottom:#836339 2px solid;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: justify;
 }
 .container_flex_tv_internet>div{
     width: 25%;
-    margin-top: 50px;
+    margin-top: 40px;
+    margin-bottom: 150px;
     min-width: 300px;
     background-color: #1b5e38;
-    padding: 10px;
     border-radius: 15px;
     color:white;
 }
+
