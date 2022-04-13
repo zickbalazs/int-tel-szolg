@@ -237,4 +237,6 @@ span{
     border-radius: 15px;
     color:white;
 }
-
+.question{
+    cursor: pointer;
+}

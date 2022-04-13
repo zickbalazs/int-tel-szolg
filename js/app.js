@@ -1,7 +1,9 @@
 let navBtn = document.querySelector('button'),
     linkek = document.querySelector('nav').querySelector('div'),
     _switch = false;
-    arrows = document.querySelectorAll('i');
+    arrows = document.querySelectorAll('i'),
+    questions = document.querySelectorAll('.question');
+
 navBtn.addEventListener('click', ()=>{
     if (_switch){
         linkek.style.height = "0";
@@ -16,21 +18,28 @@ navBtn.addEventListener('click', ()=>{
 
 for (let i = 1; i < arrows.length; i++) {
     arrows[i].addEventListener('click', ()=>{
-        let div = document.querySelector(`.a${i}`);
+        EventFire(span[i-1].click,'click')
+    });
+    
+}
+for (let i = 0; i < questions.length; i++) {
+    questions[i].addEventListener('click', ()=>{
+        let div = document.querySelector(`.a${i+1}`);
         if (div.style.display==""){
             div.style.display="none";
         }
         if (div.style.display=="none"){
             div.style.display="block";
             div.style.opacity = "100%";
-            arrows[i].style.transform="rotate(180deg)"
+            arrows[i+1].style.transform="rotate(180deg)"
         }
         else if (div.style.display=="block"){
             div.style.display="none";
             div.style.opacity = "0%";
-            arrows[i].style.transform="rotate(0deg)"
+            arrows[i+1].style.transform="rotate(0deg)"
         }
     });
+    
 }
 
 
