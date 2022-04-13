@@ -49,11 +49,11 @@ footer>*{
     margin: 0;
 
 }
-footer>ul>li>a{
+footer>ul>li>a, footer>p>a{
     color: #836339;
     transition: color 0.2s;
 }
-footer>ul>li>a:hover{
+footer>ul>li>a:hover, footer>p>a:hover{
     color: white;
 }
 header{
